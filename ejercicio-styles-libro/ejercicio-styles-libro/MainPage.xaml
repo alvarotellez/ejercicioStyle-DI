@@ -19,16 +19,14 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <!--Botones superiores-->
-            <Button Grid.Column="0" Grid.Row="0" Content="Donuts"/>
-            <Button Grid.Column="1" Grid.Row="0" Content="Coffee"/>
-            <Button Grid.Column="2" Grid.Row="0" Content="Schedule"/>
-            <Button Grid.Column="3" Grid.Row="0" Content="Complete"/>
+            
+            <!--Botones superiores-->           
+            <Button Grid.Column="0" Grid.Row="0" Content="Donuts" Style="{StaticResource estiloBtn}"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="Coffee" Style="{StaticResource estiloBtn}"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="Schedule" Style="{StaticResource estiloBtn}"/>
+            <Button Grid.Column="3" Grid.Row="0" Content="Complete" Style="{StaticResource estiloBtn}"/>
+            <Image Grid.Column="3" Grid.Row="1" Source="/Assets/604.jpg" Style="{StaticResource estiloImagen}"/>
 
-            <Image Grid.Column="3" Grid.Row="1" Source="/Assets/782.jpg"/>
-            <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Orientation="Vertical">
-                
-            </StackPanel>
         </Grid>
     </Grid>
 </Page>
