@@ -8,6 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid Margin="-10,10,10,-10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Botones superiores-->
+            <Button Grid.Column="0" Grid.Row="0" Content="Donuts"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="Coffee"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="Schedule"/>
+            <Button Grid.Column="3" Grid.Row="0" Content="Complete"/>
+        </Grid>
     </Grid>
 </Page>
