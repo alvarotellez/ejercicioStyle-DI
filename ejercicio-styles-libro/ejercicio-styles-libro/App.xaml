@@ -9,6 +9,7 @@
             <!--Hace referencia a la ruta donde tienes guardado el diccionario-->
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Diccionario.xaml"/>
+                <ResourceDictionary Source="Resources/diccionarioBotones.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
