@@ -5,6 +5,5 @@
     xmlns:local="using:ejercicio_styles_libro.Resources">
     <Style x:Key="estiloImagen" TargetType="Image">
         <Setter Property="Image.Stretch" Value="UniformToFill"/>
-        <Setter Property="Image.Margin" Value="0,1,0,0"/>
     </Style>
 </ResourceDictionary>

@@ -48,6 +48,9 @@
             </Button>
             <Image Grid.Column="3" Grid.Row="1" Source="/Assets/604.jpg" Style="{StaticResource estiloImagen}"/>
 
+            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Background="Red">
+                
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>
