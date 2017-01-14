@@ -21,9 +21,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!--Botones superiores-->
-            <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
-               CompactPaneLength="50" OpenPaneLength="150">
+            <!--Implementacion del menu hamburgersa-->
+            <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="True" 
+               CompactPaneLength="50" OpenPaneLength="150" Grid.RowSpan="2">
                 <SplitView.Pane>
                     <StackPanel Background="Gray">
                         <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
@@ -31,7 +31,7 @@
                         <StackPanel Orientation="Horizontal">
                             <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
                     Width="50" Height="50" Background="Transparent"/>
-                            <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" />
+                            <TextBlock Text="Inicio" FontSize="18" VerticalAlignment="Center"  />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
@@ -45,14 +45,8 @@
                         </StackPanel>
                     </StackPanel>
                 </SplitView.Pane>
-                <SplitView.Content>
-                    <Grid>
-                        <TextBlock Text="SplitView Basic" FontSize="54" Foreground="White"
-                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Grid>
-                </SplitView.Content>
             </SplitView>
-
+            <!--Botones superiores-->
             <Button Grid.Column="1" Style="{StaticResource estiloBtn}" Click="Button_ClickDonuts">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Assets/donut.png" Style="{StaticResource estiloImagenBtn}"/>
@@ -80,7 +74,7 @@
             </Button>
             <Image Grid.Column="4" Grid.Row="1" Source="/Assets/604.jpg" Style="{StaticResource estiloImagen}"/>
 
-            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Background="Green">
+            <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Background="Green">
 
             </StackPanel>
         </Grid>
