@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="ejercicio_styles_libro.Schedule"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ejercicio_styles_libro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Botones superiores-->
+            <Button Grid.Column="0" Style="{StaticResource estiloBtn}" Click="Button_ClickDonuts">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/donut.png" Style="{StaticResource estiloImagenBtn}"/>
+                    <TextBlock Text="Donuts" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="1" Style="{StaticResource estiloBtn}" Click="Button_ClickCoffee">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/coffee.png" Style="{StaticResource estiloImagenBtn}"/>
+                    <TextBlock Text="Coffee" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="2" Style="{StaticResource estiloBtn}" Click="Button_ClickSchedule">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/calendar.png" Style="{StaticResource estiloImagenBtn}"/>
+                    <TextBlock Text="Schedule" Foreground="White"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Column="3" Style="{StaticResource estiloBtn}" Click="Button_ClickComplete">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/calendar.png" Style="{StaticResource estiloImagenBtn}"/>
+                    <TextBlock Text="Complete" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Image Grid.Column="3" Grid.Row="1" Source="/Assets/604.jpg" Style="{StaticResource estiloImagen}"/>
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Background="Blue">
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

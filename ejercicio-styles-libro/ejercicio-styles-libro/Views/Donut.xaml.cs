@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ejercicio_styles_libro.Views;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,11 +21,29 @@ namespace ejercicio_styles_libro
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Donut : Page
     {
-        public MainPage()
+        public Donut()
         {
             this.InitializeComponent();
+           
+        }
+        private void Button_ClickDonuts(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Donut));
+        }
+
+        private void Button_ClickCoffee(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Coffee));
+        }
+        private void Button_ClickSchedule(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Schedule));
+        }
+        private void Button_ClickComplete(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Complete));
         }
     }
 }
