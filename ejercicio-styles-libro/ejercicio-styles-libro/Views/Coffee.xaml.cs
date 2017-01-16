@@ -46,11 +46,21 @@ namespace ejercicio_styles_libro
         {
             this.Frame.Navigate(typeof(Complete));
         }
-
+        /// <summary>
+        /// Metodo que cambia el estado del menu hamburguesa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             splitPrincipal.IsPaneOpen = !splitPrincipal.IsPaneOpen;
         }
+        //Hay un problema
+        /// <summary>
+        /// Metodos referentes al boton de volver atras
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void appointmentsDetail_BackRequested(object sender, BackRequestedEventArgs e)
         {
             // Mark event as handled so we don't get bounced out of the app.
