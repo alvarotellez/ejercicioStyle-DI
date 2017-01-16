@@ -90,7 +90,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Image Source="../Assets/logo.png" Height="120"/>
-                <Button Content="Roast" Grid.Column="1" Grid.Row="0">
+                <Button Content="Roast" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top">
                     <Button.Flyout>
                         <MenuFlyout>
                             <MenuFlyoutItem Text="None"/>
@@ -99,7 +99,7 @@
                         </MenuFlyout>
                     </Button.Flyout>
                 </Button>
-                <Button Content="Sweetener" Grid.Column="1" Grid.Row="1">
+                <Button Content="Sweetener" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
                     <Button.Flyout>
                         <MenuFlyout>
                             <MenuFlyoutItem Text="None"/>
@@ -108,7 +108,7 @@
                         </MenuFlyout>
                     </Button.Flyout>
                 </Button>
-                <Button Content="Cream" Grid.Column="1" Grid.Row="2">
+                <Button Content="Cream" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
                     <Button.Flyout>
                         <MenuFlyout>
                             <MenuFlyoutItem Text="None"/>

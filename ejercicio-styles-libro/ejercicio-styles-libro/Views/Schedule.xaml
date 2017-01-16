@@ -88,9 +88,9 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Image Source="../Assets/logo.png" Height="120"/>
-                <TextBlock Text="Pickup:" Grid.Column="0" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <CalendarDatePicker Grid.Column="1" Grid.Row="1"/>
-                <TimePicker Grid.Column="1" Grid.Row="2" />
+                <TextBlock Text="Pickup:" Grid.Column="0" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                <CalendarDatePicker Grid.Column="1" Grid.Row="1" VerticalAlignment="Top"/>
+                <TimePicker Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" />
 
             </Grid>
         </Grid>
