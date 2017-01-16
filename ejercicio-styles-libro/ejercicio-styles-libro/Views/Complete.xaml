@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid Background="#5A765A">
+    <Grid Background="White">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
@@ -76,6 +76,23 @@
             </Button>
             <Image Grid.Column="3" Grid.Row="1" Source="/Assets/604.jpg" Style="{StaticResource estiloImagen}"/>
 
+            <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="../Assets/logo.png" Height="120"/>
+
+                <Grid Grid.Column="1" Grid.Row="1" >
+                    <Image Source="../Assets/ticket.png" Grid.Column="1" Grid.Row="1"/>
+                    <TextBlock Text="20d"  FontSize="30"/>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

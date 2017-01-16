@@ -25,7 +25,7 @@ namespace ejercicio_styles_libro
     /// </summary>
     public sealed partial class Donut : Page
     {
-        SystemNavigationManager systemNavigationManager;
+        //SystemNavigationManager systemNavigationManager;
         public Donut()
         {
             this.InitializeComponent();
@@ -52,39 +52,39 @@ namespace ejercicio_styles_libro
         {
             splitPrincipal.IsPaneOpen = !splitPrincipal.IsPaneOpen;
         }
-        private void appointmentsDetail_BackRequested(object sender, BackRequestedEventArgs e)
-        {
-            // Mark event as handled so we don't get bounced out of the app.
-            e.Handled = true;
-            OnBackRequested();
-        }
-        private void OnBackRequested()
-        {
-            // Page above us will be our master view.
-            // Make sure we are using the "drill out" animation in this transition.
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack(new SuppressNavigationTransitionInfo());
-            }else
-            {
-                systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-            }
+        //private void appointmentsDetail_BackRequested(object sender, BackRequestedEventArgs e)
+        //{
+        //    // Mark event as handled so we don't get bounced out of the app.
+        //    e.Handled = true;
+        //    OnBackRequested();
+        //}
+        //private void OnBackRequested()
+        //{
+        //    // Page above us will be our master view.
+        //    // Make sure we are using the "drill out" animation in this transition.
+        //    if (Frame.CanGoBack)
+        //    {
+        //        Frame.GoBack(new SuppressNavigationTransitionInfo());
+        //    }else
+        //    {
+        //        systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+        //    }
             
-        }
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            base.OnNavigatedFrom(e);
-            systemNavigationManager = SystemNavigationManager.GetForCurrentView();
-            systemNavigationManager.BackRequested -= appointmentsDetail_BackRequested;
-            systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
+        //}
+        //protected override void OnNavigatedFrom(NavigationEventArgs e)
+        //{
+        //    base.OnNavigatedFrom(e);
+        //    systemNavigationManager = SystemNavigationManager.GetForCurrentView();
+        //    systemNavigationManager.BackRequested -= appointmentsDetail_BackRequested;
+        //    systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+        //}
+        //protected override void OnNavigatedTo(NavigationEventArgs e)
+        //{
+        //    base.OnNavigatedTo(e);
 
-            systemNavigationManager = SystemNavigationManager.GetForCurrentView();
-            systemNavigationManager.BackRequested += appointmentsDetail_BackRequested;
-            systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-        }
+        //    systemNavigationManager = SystemNavigationManager.GetForCurrentView();
+        //    systemNavigationManager.BackRequested += appointmentsDetail_BackRequested;
+        //    systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        //}
     }
 }
