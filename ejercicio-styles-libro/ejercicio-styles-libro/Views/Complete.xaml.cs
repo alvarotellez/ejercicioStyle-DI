@@ -43,5 +43,9 @@ namespace ejercicio_styles_libro.Views
         {
             this.Frame.Navigate(typeof(Complete));
         }
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            splitPrincipal.IsPaneOpen = !splitPrincipal.IsPaneOpen;
+        }
     }
 }
