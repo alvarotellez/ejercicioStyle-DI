@@ -20,35 +20,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!--Implementacion del menu hamburgersa-->
-            <SplitView x:Name="splitPrincipal" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="175" Grid.Row="1" Grid.Column="0">
-
-                <SplitView.Pane>
-                    <StackPanel Background="Gray">
-                        <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" Width="50" Height="50" Background="Transparent"/>
-                            <TextBlock Text="Home" FontSize="18" VerticalAlignment="Center" />
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Content="&#59259;" Width="50" Height="50" Background="Transparent"/>
-                            <TextBlock Text="Profile" FontSize="18" VerticalAlignment="Center" />
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Content="&#59155;" Width="50" Height="50" Background="Transparent"/>
-                            <TextBlock Text="Configuration" FontSize="18" VerticalAlignment="Center" />
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal">
-                            <Button x:Name="MenuButton4" FontFamily="Segoe MDL2 Assets" Content="&#xE121;" Width="50" Height="50" Background="Transparent"/>
-                            <TextBlock Text="Orders" FontSize="18" VerticalAlignment="Center" />
-                        </StackPanel>
-                    </StackPanel>
-                </SplitView.Pane>
-            </SplitView>
+         
             <!--Botones superiores-->
             <Button Grid.Column="0" Grid.Row="0" Style="{StaticResource estiloBtn}" Click="Button_ClickDonuts">
                 <StackPanel Orientation="Horizontal">
@@ -77,7 +49,7 @@
             </Button>
             <Image Grid.Column="3" Grid.Row="1" Source="/Assets/604.jpg" Style="{StaticResource estiloImagen}"/>
 
-            <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>

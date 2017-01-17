@@ -48,10 +48,7 @@ namespace ejercicio_styles_libro
         {
             this.Frame.Navigate(typeof(Complete));
         }
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
-        {
-            splitPrincipal.IsPaneOpen = !splitPrincipal.IsPaneOpen;
-        }
+ 
         //private void appointmentsDetail_BackRequested(object sender, BackRequestedEventArgs e)
         //{
         //    // Mark event as handled so we don't get bounced out of the app.
